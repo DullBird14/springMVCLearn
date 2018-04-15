@@ -8,7 +8,7 @@ import spittr.data.SpitterRepositoryImp;
 import spittr.data.SpittleRepository;
 import spittr.data.SpittleRepositoryImp;
 
-@Configuration
+//@Configuration
 public class TestConfig {
 	@Bean
 	public SpittleRepository spittleRepository(){

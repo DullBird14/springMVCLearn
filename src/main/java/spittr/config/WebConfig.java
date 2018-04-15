@@ -10,10 +10,12 @@ import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
-@Configuration
-@EnableWebMvc
-@ComponentScan("spittr.web")
-public class WebConfig extends WebMvcConfigurerAdapter {
+//@Configuration
+//@EnableWebMvc
+//@ComponentScan("spittr.web")
+public class WebConfig
+//		extends WebMvcConfigurerAdapter
+{
 
 	@Bean
 	public ViewResolver viewResolver(){
@@ -24,15 +26,15 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		return resolver;	
 	}
 	
-	@Override
-	public void configureDefaultServletHandling(
-			DefaultServletHandlerConfigurer configurer) {
-		configurer.enable();
-	}
-	
-	@Override
-	public void addViewControllers(ViewControllerRegistry registry) {
-		registry.addViewController("/login").setViewName("login");
-	}
+//	@Override
+//	public void configureDefaultServletHandling(
+//			DefaultServletHandlerConfigurer configurer) {
+//		configurer.enable();
+//	}
+//
+//	@Override
+//	public void addViewControllers(ViewControllerRegistry registry) {
+//		registry.addViewController("/login").setViewName("login");
+//	}
 	
 }
