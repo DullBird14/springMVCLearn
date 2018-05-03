@@ -8,5 +8,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class TestFilter extends HandlerInterceptorAdapter {
+    void test(){
+        int i = 0;
+        if (i > -1) {
 
+        }
+    }
 }
